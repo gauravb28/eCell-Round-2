@@ -71,3 +71,11 @@
     }
   }
 }
+
+@media (max-height: 500px) {
+  #navbar {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
