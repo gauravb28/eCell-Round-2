@@ -1,0 +1,85 @@
+$pri-color: #cc0099;
+$sec-color: #e6af19;
+$dark-color: #333;
+$med-color: #ccc;
+$light-color: #f4f4f4;
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+// Text
+.text-pri {
+  color: $pri-color;
+}
+
+.text-sec {
+  color: $sec-color;
+}
+
+// Padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+  &-6 {
+    padding: 6rem 0;
+  }
+}
+
+// Margins
+.my {
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+  &-6 {
+    margin: 6rem 0;
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: $pri-color;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background: $dark-color;
+    color: $sec-color;
+    transform: scale(1.1);
+  }
+}
+
+.btn-light {
+  display: inline-block;
+  background: inherit;
+  color: $pri-color;
+  padding: 0.5rem 2rem;
+  border: 1px $pri-color solid;
+  border-radius: 5px;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background: $pri-color;
+  }
+}
