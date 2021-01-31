@@ -102,9 +102,6 @@ ul {
 
 // Services
 #services {
-  max-width: 1100px;
-  margin: auto;
-
   .head {
     display: flex;
     justify-content: space-between;
@@ -176,6 +173,8 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
 
     .card {
       display: flex;
