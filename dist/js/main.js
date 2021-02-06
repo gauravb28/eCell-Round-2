@@ -45,6 +45,13 @@ function colorChange(e) {
       link[i].style.background = '#cc0099';
       link[i].style.color = '#fff';
     }
+    services.addEventListener('mouseout', function(e) {
+      if(e.target.classList.contains('btn-light')) {
+        e.target.style.color = '#fff';
+        e.target.style.background = '#cc0099';
+      }
+    })
+
   } else {
     services.style.color = '#000';
     services.style.background = '#fff';
@@ -56,7 +63,19 @@ function colorChange(e) {
       link[i].style.background = '#ccc';
       link[i].style.color = '#cc0099';
     }
+
+    services.addEventListener('mouseover', function(e) {
+      if(e.target.classList.contains('btn-light')) {
+        e.target.style.color = '#fff';
+        e.target.style.background = '#cc0099';
+      }
+    })
+
+    services.addEventListener('mouseout', function(e) {
+      if(e.target.classList.contains('btn-light')) {
+        e.target.style.color = '#cc0099';
+        e.target.style.background = '#ccc';
+      }
+    })
   }
 }
-
-// console.log(window.outerWidth);
